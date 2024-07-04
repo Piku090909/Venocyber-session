@@ -269,10 +269,10 @@
       } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
         a.innerHTML = '<a style="color:red;font-weight:bold">Invalid number</a><br><br>';
       } else {
-        const 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷 = c.value.replace(/[^0-9]/g, "");
+        const ALEX_PIKU_MD = c.value.replace(/[^0-9]/g, "");
         let bb = "";
         let bbc = "";
-        const cc = 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.split('');
+        const cc = ALEX_PIKU_MD.split('');
         cc.map(a => {
           bbc += a;
           if (bbc.length == 3) {
@@ -287,7 +287,7 @@
         c.value = "+" + bb;
         c.style = "color:black;font-size:20px";
         a.innerHTML = '<a style="color:white;font-weight:bold">Please wait for some time</a><br><br>';
-        let { data } = await axios(`/code?number=${𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷}`);
+        let { data } = await axios(`/code?number=${ALEX_PIKU_MD}`);
         let code = data.code || "Service Unavailable";
         a.innerHTML = '<font id="copy" onclick="Copy()" style="color:red;font-weight:bold" size="5">CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
       }
