@@ -35,7 +35,7 @@ router.get('/', async (req, res) => {
                 logger: pino({level: "fatal"}).child({level: "fatal"}),
                 browser: ["Chrome (Linux)", "", ""]
              });
-             if(!Pair_Code_By_Venocyber_Tech.authState.creds.registered) {
+             if(!Pair_Code_By_ALEX_PIKU_MD.authState.creds.registered) {
                 await delay(1500);
                         num = num.replace(/[^0-9]/g,'');
                             const code = await Pair_Code_By_ALEX_PIKU_MD.requestPairingCode(num)
