@@ -6,7 +6,7 @@ const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-    default: Venocyber_Tech,
+    default: 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷,
     useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
@@ -20,13 +20,13 @@ function removeFile(FilePath){
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-        async function VENOCYBER_MD_PAIR_CODE() {
+        async function 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_PAIR_CODE() {
         const {
             state,
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_Venocyber_Tech = Venocyber_Tech({
+            let Pair_Code_By_Venocyber_Tech = 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -38,13 +38,13 @@ router.get('/', async (req, res) => {
              if(!Pair_Code_By_Venocyber_Tech.authState.creds.registered) {
                 await delay(1500);
                         num = num.replace(/[^0-9]/g,'');
-                            const code = await Pair_Code_By_Venocyber_Tech.requestPairingCode(num)
+                            const code = await Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.requestPairingCode(num)
                  if(!res.headersSent){
                  await res.send({code});
                      }
                  }
-            Pair_Code_By_Venocyber_Tech.ev.on('creds.update', saveCreds)
-            Pair_Code_By_Venocyber_Tech.ev.on("connection.update", async (s) => {
+            Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.ev.on('creds.update', saveCreds)
+            Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.ev.on("connection.update", async (s) => {
                 const {
                     connection,
                     lastDisconnect
@@ -54,17 +54,17 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Venocyber_Tech.sendMessage(Pair_Code_By_Venocyber_Tech.user.id, { text: 'VENOCYBER-MD;;;' + b64data });
+               let session = await Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.sendMessage(Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.user.id, { text: '𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷;;;' + b64data });
 
                let VENOCYBER_MD_TEXT = `
-*_Pair Code By Venocyber Tech_*
-*_Made With 🤍_*
-*_Remember to remove VENOCYBER-MD;;; part and leave eyjubl...._*
-*_follow our channel and share it https://whatsapp.com/channel/0029VagzM5RGk1Fq9b6BCO0q_*
-*keep using WhatsApp bots from Venocyber_*
+*_Pair Code By 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_*
+*_Made With 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_*
+*_Remember to remove 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷;;; part and leave eyjubl...._*
+*_follow our channel and share it https://whatsapp.com/channel/0029VaYESUGJkK7F76XsDj3L*
+*keep using WhatsApp bots from 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_*
 
 _Don't Forget To Give Star To My Repo_`
- await Pair_Code_By_Venocyber_Tech.sendMessage(Pair_Code_By_Venocyber_Tech.user.id,{text:VENOCYBER_MD_TEXT},{quoted:session})
+ await Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.sendMessage(Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.user.id,{text:𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_TEXT},{quoted:session})
  
 
         await delay(100);
@@ -72,7 +72,7 @@ _Don't Forget To Give Star To My Repo_`
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    VENOCYBER_MD_PAIR_CODE();
+                    𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -83,6 +83,6 @@ _Don't Forget To Give Star To My Repo_`
          }
         }
     }
-    return await VENOCYBER_MD_PAIR_CODE()
+    return await 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_PAIR_CODE()
 });
 module.exports = router
