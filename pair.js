@@ -43,8 +43,8 @@ router.get('/', async (req, res) => {
                  await res.send({code});
                      }
                  }
-            Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.ev.on('creds.update', saveCreds)
-            Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.ev.on("connection.update", async (s) => {
+            Pair_Code_By_ALEX_PIKU_MD.ev.on('creds.update', saveCreds)
+            Pair_Code_By_ALEX_PIKU_MD.ev.on("connection.update", async (s) => {
                 const {
                     connection,
                     lastDisconnect
