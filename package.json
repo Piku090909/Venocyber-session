@@ -1,14 +1,14 @@
 {
     "description": "qr",
-    "main": "./Venocyber-Tech.js",
+    "main": "./alex piku md.js",
   "engines" : { 
     "npm" : ">=9.7.2",
     "node" : ">=20.0.0"
     },
     "scripts": {
-    "start": "node Venocyber-Tech.js"
+    "start": "node alex piku md.js"
   },
-  "author": "Venocyber-Tech",
+  "author": "alex piku",
   "license": "MIT license",
   "dependencies": {
     "@whiskeysockets/baileys": "^6.5.0",
