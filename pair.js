@@ -6,7 +6,7 @@ const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-    default: 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷,
+    default: ALEX_PIKU_MD,
     useMultiFileAuthState,
     delay,
     makeCacheableSignalKeyStore,
@@ -20,13 +20,13 @@ function removeFile(FilePath){
 router.get('/', async (req, res) => {
     const id = makeid();
     let num = req.query.number;
-        async function 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_PAIR_CODE() {
+        async function ALEX_PIKU_MD_PAIR_CODE() {
         const {
             state,
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷 = 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷({
+            let Pair_Code_By_ALEX_PIKU_MD = ALEX_PIKU_MD({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -38,7 +38,7 @@ router.get('/', async (req, res) => {
              if(!Pair_Code_By_Venocyber_Tech.authState.creds.registered) {
                 await delay(1500);
                         num = num.replace(/[^0-9]/g,'');
-                            const code = await Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.requestPairingCode(num)
+                            const code = await Pair_Code_By_ALEX_PIKU_MD.requestPairingCode(num)
                  if(!res.headersSent){
                  await res.send({code});
                      }
@@ -54,17 +54,17 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.sendMessage(Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.user.id, { text: '𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷;;;' + b64data });
+               let session = await Pair_Code_By_ALEX_PIKU_MD.sendMessage(Pair_Code_By_ALEX_PIKU_MD.user.id, { text: 'ALEX_PIKU_MD;;;' + b64data });
 
-               let 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_TEXT = `
-*_Pair Code By 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_*
-*_Made With 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_*
+               let ALEX_PIKU_MD = `
+*Pair Code By ALEX_PIKU_MD*
+*Made With 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷*
 *_Remember to remove 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷;;; part and leave eyjubl...._*
 *_follow our channel and share it https://whatsapp.com/channel/0029VaYESUGJkK7F76XsDj3L*
-*keep using WhatsApp bots from 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_*
+*keep using WhatsApp bots from 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷*
 
 _Don't Forget To Give Star To My Repo_`
- await Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.sendMessage(Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.user.id,{text:𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_TEXT},{quoted:session})
+ await Pair_Code_By_ALEX_PIKU_MD.sendMessage(Pair_Code_By_ALEX_PIKU_MD.user.id,{text:ALEX_PIKU_MD_TEXT},{quoted:session})
  
 
         await delay(100);
@@ -72,7 +72,7 @@ _Don't Forget To Give Star To My Repo_`
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
-                    𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_PAIR_CODE();
+                    ALEX_PIKU_MD_PAIR_CODE();
                 }
             });
         } catch (err) {
@@ -83,6 +83,6 @@ _Don't Forget To Give Star To My Repo_`
          }
         }
     }
-    return await 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_PAIR_CODE()
+    return await ALEX_PIKU_MD_PAIR_CODE()
 });
 module.exports = router
