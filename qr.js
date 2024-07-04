@@ -8,7 +8,7 @@ const fs = require('fs');
 let router = express.Router()
 const pino = require("pino");
 const {
-	default: Venocyber_Tech,
+	default: 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷,
 	useMultiFileAuthState,
 	jidNormalizedUser,
 	Browsers,
@@ -28,13 +28,13 @@ const {
 } = require("node:fs/promises")
 router.get('/', async (req, res) => {
 	const id = makeid();
-	async function VENOCYBER_MD_QR_CODE() {
+	async function 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_PAIR_CODE() {
 		const {
 			state,
 			saveCreds
 		} = await useMultiFileAuthState('./temp/' + id)
 		try {
-			let Qr_Code_By_Venocyber_Tech = Venocyber_Tech({
+			let Qr_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷 = 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷({
 				auth: state,
 				printQRInTerminal: false,
 				logger: pino({
@@ -43,8 +43,8 @@ router.get('/', async (req, res) => {
 				browser: Browsers.macOS("Desktop"),
 			});
 
-			Qr_Code_By_Venocyber_Tech.ev.on('creds.update', saveCreds)
-			Qr_Code_By_Venocyber_Tech.ev.on("connection.update", async (s) => {
+			Qr_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.ev.on('creds.update', saveCreds)
+			Qr_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.ev.on("connection.update", async (s) => {
 				const {
 					connection,
 					lastDisconnect,
@@ -56,26 +56,26 @@ router.get('/', async (req, res) => {
 					let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
 					await delay(800);
 				   let b64data = Buffer.from(data).toString('base64');
-				   let session = await Qr_Code_By_Venocyber_Tech.sendMessage(Qr_Code_By_Venocyber_Tech.user.id, { text: 'VENOCYBER-MD;;;' + b64data });
+				   let session = await Qr_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.sendMessage(Qr_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.user.id, { text: '𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷;;;' + b64data });
 	
-				   let VENOCYBER_MD_TEXT = `
-*_Qr Code By Venocyber Tech_*
-*_Made With 🤍_*
-*_Remember to remove VENOCYBER-MD;;; part and leave eyjubl...._*
-*_follow our channel and share it https://whatsapp.com/channel/0029VagzM5RGk1Fq9b6BCO0q_*
-*keep using WhatsApp bots from Venocyber_*
+				   let 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_TEXT = `
+*_Qr Code By 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_*
+*_Made With 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_*
+*_Remember to remove 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷;;; part and leave eyjubl...._*
+*_follow our channel and share it https://whatsapp.com/channel/0029VaYESUGJkK7F76XsDj3L*
+*keep using WhatsApp bots from 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_*
 	
 _Don't Forget To Give Star To My Repo_`
-	 await Qr_Code_By_Venocyber_Tech.sendMessage(Qr_Code_By_Venocyber_Tech.user.id,{text:VENOCYBER_MD_TEXT},{quoted:session})
+	 await Qr_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.sendMessage(Qr_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.user.id,{text:𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_TEXT},{quoted:session})
 
 
 
 					await delay(100);
-					await Qr_Code_By_Venocyber_Tech.ws.close();
+					await Qr_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.ws.close();
 					return await removeFile("temp/" + id);
 				} else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
 					await delay(10000);
-					SIGMA_MD_QR_CODE();
+					𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_QR_CODE();
 				}
 			});
 		} catch (err) {
@@ -88,6 +88,6 @@ _Don't Forget To Give Star To My Repo_`
 			await removeFile("temp/" + id);
 		}
 	}
-	return await VENOCYBER_MD_QR_CODE()
+	return await 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_QR_CODE()
 });
 module.exports = router
