@@ -26,7 +26,7 @@ router.get('/', async (req, res) => {
             saveCreds
         } = await useMultiFileAuthState('./temp/'+id)
      try {
-            let Pair_Code_By_Venocyber_Tech = 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷({
+            let Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷 = 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷({
                 auth: {
                     creds: state.creds,
                     keys: makeCacheableSignalKeyStore(state.keys, pino({level: "fatal"}).child({level: "fatal"})),
@@ -56,7 +56,7 @@ router.get('/', async (req, res) => {
                let b64data = Buffer.from(data).toString('base64');
                let session = await Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.sendMessage(Pair_Code_By_𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷.user.id, { text: '𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷;;;' + b64data });
 
-               let VENOCYBER_MD_TEXT = `
+               let 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_TEXT = `
 *_Pair Code By 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_*
 *_Made With 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷_*
 *_Remember to remove 𝛥𝐿𝛯𝛸_𝛲𝛪𝛫𝑈_𝛭𝐷;;; part and leave eyjubl...._*
